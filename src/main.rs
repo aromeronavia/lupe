@@ -1,3 +1,7 @@
+mod note;
+use note::Note;
+
 fn main() {
-    println!("Hello, world!");
+    let note = Note::new(440.0, 1.0);
+    note.play();
 }
